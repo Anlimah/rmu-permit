@@ -1,0 +1,15 @@
+{
+    "name": "bcs21/student-permit",
+    "description": "Allows students to create permits, download the permits to have permission to write exams",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Francis A. Anlimah",
+            "email": "francis.ano.anlimah@gmail.com"
+        }
+    ],
+    "require": {
+        "phpoffice/phpspreadsheet": "^1.16",
+        "mpdf/mpdf": "^8.0"
+    }
+}
