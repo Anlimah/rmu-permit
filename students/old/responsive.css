@@ -1,0 +1,119 @@
+
+/*tablets*/
+@media screen and (max-width: 600px){
+  
+}
+
+@media screen and (min-width: 768px) {
+    #title-component {
+        font-size: 30px!important;
+    }
+
+    #header-component {
+        padding: 20px !important;
+    }
+
+    #header-component #logo {
+        width: 70px !important;
+        height: 70px !important;
+    }
+
+    #sidenav-container>p{
+        font-size: 25px !important;
+    }
+
+    .mobi-items-container {
+        display: flex;
+    }
+
+    .mobi-items-container a {
+        width: 300px;
+        margin-right: 20px;
+        margin-left: 20px;
+        font-size: 20px;
+    }
+
+    .mobi-items-container a li>i{
+        font-size: 80px;
+        margin: 30px 30px 20px 30px;
+    }
+
+    .mobi-items-container a li {
+        padding: 20px;
+        display: block;
+        text-align: center;
+        font-size: 25px;
+        border: none;
+        box-shadow: 0px 0px 4px 2px #eee;
+        border-radius: 5px;
+    }
+
+    .mobi-items-container a li div {
+        margin-top: 20px;
+    }
+
+    .mobi-items-container a li div i {
+        display: none;
+    }
+
+    .mobi-items-container a li div span {
+        margin-left: 20px;
+    }
+
+    /*main container component*/
+
+    #main-container-component #bal-card p{
+        font-size: 20px;
+    }
+
+    #main-container-component #bal-card h2{
+        font-size: 40px;
+    }
+
+    #main-container-component ul li {
+        font-size: 25px;
+        padding: 35px 15px;
+    }
+
+    /*check-balance page*/
+    
+
+    /*permit*/
+    #main-content-component #permit {
+        width: 600px;
+    }
+
+    #main-content-component #permit tr td img {
+        width: 60px;
+        height: 60px;
+    }
+
+    #main-content-component{
+        font-size: 24px;
+        padding: 15px 10px;
+    }
+
+    #main-content-component{
+        text-align: left;
+    }
+
+    .notice {
+        font-size: 22px !important;
+        margin-top: 20px;
+    }
+
+    /*profile*/
+    #profile-component #user-details tr td {
+        font-size: 24px !important;
+    }
+
+    #profile-component {
+        max-width: 400px;
+        margin: 15px auto;
+    }
+
+    #menu ul {
+        margin-top: -20px;
+        margin-right: 620px;
+    }
+}

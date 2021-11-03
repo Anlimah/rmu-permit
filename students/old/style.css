@@ -1,0 +1,279 @@
+@import url("responsive.css");
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@500;600;700&display=swap');
+
+/*Global*/
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: 'Open Sans', sans-serif;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+.active {
+  background-color: #eee;
+  color: rgb(44, 44, 44);
+}
+
+/*index*/
+/*header*/
+#root-component {
+  max-width: 1700px;
+  height: 100vh;
+  margin: 0px auto;
+  background-color: #fff;
+}
+
+#header-component {
+  background-color: #fff;
+  padding: 10px 20px 10px 10px;
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #eee;
+  justify-content: space-between;
+  box-shadow: 3px 3px 5px #eee !important;
+}
+
+#header-component #logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+
+}
+
+#user-profile-summary {
+  display: none;
+  align-items: center;
+
+}
+
+#user-profile-summary div #username {
+  color: #fff;
+}
+
+#user-profile-summary div p {
+  color: #00d5ff;
+}
+
+#user-profile-summary #user-logo {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffffde;
+  border-radius: 50px;
+  margin-left: 15px;
+}
+
+#title-component {
+  color: #0065c6;
+  font-size: 18px;
+}
+
+#menu-toggle {
+  width: 22px;
+  height: 20px;
+}
+
+#menu-toggle i {
+  font-size: 25px;
+}
+
+
+/*Main content*/
+#main-container-component {
+  padding: 0px 20px 20px 0px;
+  display: flex;
+}
+
+#content-component {
+  width: 100%;
+  padding: 0px 10px;
+  text-align: center;
+  border-left: 2px solid rgb(226, 226, 226);
+  font-size: 23px;
+  background-color: white;
+}
+
+/*side nav */
+#side-nav-container {
+  width: 25%;
+  height: 88vh;
+  background-color: white;
+}
+
+#side-nav {
+  margin: 0px 0px 10px 0px;
+}
+
+#side-nav a {
+  color: rgb(53, 53, 53);
+}
+
+#side-nav a li {
+  padding: 25px 20px;
+}
+
+
+/*menu*/
+#menu {
+  background-color: rgba(252, 0, 0, 0.993);
+  width: 100%;
+  margin: 0 auto;
+  height: 100vh;
+  z-index: 5px;
+  text-align: right;
+  display: none;
+}
+
+#menu ul {
+  width: 250px;
+  height: 200px;
+  background-color: #fff;
+  border-radius: 7px;
+  border: 0.3px solid #ececec;
+  padding: 15px 15px;
+  position: relative;
+  top: 10px;
+  right: 0px;
+  z-index: 6px;
+  box-shadow: 0px 0px 8px 2px #eee;
+  -webkit-box-shadow: 0px 0px 8px 2px #eee;
+  -moz-box-shadow: 0px 0px 8px 2px #eee;
+
+}
+
+#menu ul a {
+  color: rgb(85, 85, 85);
+}
+
+#menu ul li {
+  padding: 17px 0px;
+  border-bottom: 0.5px solid #cccccc;
+}
+
+
+/*CHECK BALANCE*/
+.check-bal-root {
+  max-width: 1500px;
+}
+
+.check-bal-root #content-component p {
+  margin-bottom: 20px;
+}
+
+.check-bal-root #content-component #last-payment {
+  font-weight: bold;
+  color: blue;
+}
+
+/*PERMIT*/
+#psw-reset-form {
+  padding: 15px;
+  margin: 40px auto 20px auto;
+  border: 1.5px solid #f0f0f0;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0px 0px 8px 2px #eee;
+  -webkit-box-shadow: 0px 0px 8px 2px #eee;
+  -moz-box-shadow: 0px 0px 8px 2px #eee;
+  width: 300px;
+}
+
+.notice {
+  color: tomato !important;
+  text-align: center;
+  font-size: 11px;
+}
+
+
+/*profile*/
+.profile-root #content-component {
+  padding-top: 100px !important;
+}
+
+#profile-component {
+  text-align: center;
+  background-color: #fff;
+  padding: 50px;
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0px 0px 6px 2px #eee;
+  -webkit-box-shadow: 0px 0px 6px 2px #eee;
+  -moz-box-shadow: 0px 0px 6px 2px #eee;
+}
+
+#profile-component i {
+  font-size: 80px;
+  color: rgb(202, 199, 199);
+  margin-bottom: 30px;
+}
+
+#profile-component #user-details p {
+  font-size: 20px;
+  margin: 15px;
+}
+
+#profile-component #user-details {
+  margin: 0px auto;
+}
+
+#profile-component #user-details tr td {
+  font-size: 14px;
+  padding: 10px;
+}
+
+#profile-component #user-details tr td:first-child {
+  text-align: left !important;
+}
+
+#profile-component #user-details tr td:last-child {
+  text-align: right !important;
+}
+
+#profile-component #user-details span {
+  font-weight: bold;
+  margin-left: 8px;
+}
+
+
+/*psw-root*/
+.psw-root #content-component {
+  padding-top: 200px;
+}
+
+.psw-root #content-component form {
+  max-width: 450px;
+  padding: 50px 20px;
+}
+
+.psw-root #content-component form input {
+  width: 90%;
+  padding: 15px;
+  font-size: 25px;
+  margin-bottom: 20px;
+  border: 1px solid rgb(165, 165, 165);
+  border-radius: 8px;
+}
+
+.psw-root #content-component form input:focus {
+  outline: none;
+  border: 5px solid #4285fa;
+  color: #4285fa;
+}
+
+.psw-root #content-component form button {
+  padding: 20px;
+  font-size: 22px;
+  margin-top: 10px;
+  background-color: #4285fa;
+  color: #fff;
+  border-radius: 8px;
+  border: none;
+}

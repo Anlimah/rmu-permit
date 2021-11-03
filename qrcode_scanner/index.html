@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <link rel="stylesheet" href="src/styles.css">
+    <script src="src/qr_packed.js"></script>
+    <title>E-PECS | QR Code Reader</title>
+    <style>
+        input {
+            visibility: hidden;
+        }
+
+        #qr-results-container{
+            max-width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            top: 0;
+            background-color: #fff;
+            z-index: 10;
+            display: none;
+        }
+
+        #qr-results-container > div {
+            margin: 0 auto;
+            max-width: 400px;
+        }
+
+#qr-results-container h2 {
+
+            text-align: center;
+            padding: 60px 0px 20px 0px;
+        }
+
+        #qr-results-container table{
+            margin: 0 auto;
+            width: 100%;
+            padding: 10px;
+        }
+
+        #qr-results-container table tr td{
+            padding: 12px;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+
+        table tr td:last-child{
+            font-weight: bold;
+            text-align: right;
+        }
+
+        #eligible-status {
+            padding: 10px 0px;
+            color: rgb(0, 206, 0);
+            text-align: center;
+        }
+        #back-btn-container{
+            margin-top: 10px;
+            margin-bottom: 40px;
+            padding: 10px;
+        }
+        #back-btn{
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="root">
+        <div id="header">
+            <a href="../students/"><img src="../images/rmu logo.jpg" alt="rmu logo"></a>
+            <h2>QR Code Reader</h2>
+            <div></div>
+        </div>
+        <div id="container">
+
+            <div id="qr-focus-box">
+                <div class="content c1"></div>
+                <p id="qr_note">Focus QR Code here</p>
+                <hr>
+                <div class="content c2"></div>
+            </div>
+            
+            <canvas hidden="" id="qr-canvas"></canvas>
+
+            
+        </div>
+        <!-- display scan results -->
+        <div id="qr-result" style="visibility: hidden;">
+            <p style="width: 100%; text-align: center;"><b>Results:</b><span id="outputData"></span></p>
+        </div>
+
+        <div id="btn-container">
+            <button id="btn-scan-qr">Start scanner</button>
+        </div>
+    </div>
+
+    <input id="qr_text" type="text" autocomplete="off" placeholder="Search country..." />
+    <div id="qr-results-container"></div>
+      
+    <p id="footer">QR Code scanner v 1.0.0</p>
+
+    <script src="./src/qrCodeScanner.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $("#qr_text").change(function(){
+                var inputVal = $(this).val();       
+                var resultDropdown = $(this).siblings("#qr-results-container");
+                if(inputVal.length > 0){
+                    $.get("backend-search.php", {term: inputVal}).done(function(data){
+                        // Display the returned data in browser
+                        resultDropdown.html(data);
+                        $("#root").hide();
+                    });
+                } else{
+                    resultDropdown.empty();
+                }
+                $("#qr-results-container").css("display", "block");
+            });   
+
+            $(".back-btn").click(function () {
+                $("#root").show();
+                $("#qr-results-container").hide();
+            });
+        });
+    </script>
+    
+</body>
+</html>
+<!-- add some animation bar to move up and down repeatedly -->
+<!-- change border colors when button is clicked -->

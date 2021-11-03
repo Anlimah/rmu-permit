@@ -1,0 +1,41 @@
+/* VARIOUS SCREEN SIZES */
+
+/* Extra small devices(phones and down) */
+@media only screen and(max-width: 600px){
+    #root{
+        max-width: 400px !important;
+        text-align: center !important;
+    }
+}
+
+/* Small devices(Portrait tablets and large phones) */
+@media only screen and(min-width: 600px){
+    #root{
+        max-width: 400px !important;
+        text-align: center !important;
+    }
+}
+
+/* Medium devices(landscape tablets) */
+@media only screen and(min-width: 768px){
+    #root{
+        max-width: 400px !important;
+        text-align: center !important;
+    }
+}
+
+/* Large devices(laptops/desktops) */
+@media only screen and(min-width: 992px){
+    #root{
+        max-width: 400px !important;
+        text-align: center !important;
+    }
+}
+
+/* Extra large devices(large laptops and desktops) */
+@media only screen and(min-width: 1200px){
+    #root{
+        max-width: 400px !important;
+        text-align: center !important;
+    }
+}

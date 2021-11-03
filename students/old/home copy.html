@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">E-PECS</div>
+        <!-- NAVIGATION MENU -->
+        <ul class="nav-links">
+            <!-- USING CHECKBOX HACK -->
+            <input type="checkbox" id="checkbox_toggle" />
+            <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+            <!-- NAVIGATION MENUS -->
+            <div class="menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="/">Balance</a></li>
+                <!--<li class="services">
+                <a href="/">Services</a>
+                    <!-- DROPDOWN MENU -->
+                    <!-- <ul class="dropdown">
+                        <li><a href="/">Dropdown 1 </a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 2</a></li>
+                        <li><a href="/">Dropdown 3</a></li>
+                        <li><a href="/">Dropdown 4</a></li>
+                    </ul>
+                </li>-->
+                <li><a href="/">Profile</a></li>
+                <li><a href="/">Logout</a></li>
+            </div>
+        </ul>
+    </nav>
+    <main>
+        <div class="icon-bar">
+            <a href="/" class="active">
+                <i class="bi-house"></i>
+            </a>
+            <a href="check_balance.php">
+                <i class="bi-cash-coin"></i>
+            </a>
+            <a href="profile.php">
+                <i class="bi-person"></i>
+            </a>
+            <a href="../qrcode_scanner/">
+                <i class="bi-upc-scan"></i>
+            </a>
+        </div>
+        <div class="info-board eligible">
+            You are eligible for a permit card!
+        </div>
+        <div class="content-area">
+            <img class="qr-code-image" src="https://chart.googleapis.com/chart?cht=qr&chs=250x250&chl=1" alt="Error getting QR Code. Please connect to the internet"/>
+        <!--<p class="ine-msg">Hello Francis, you've been tagged as owing. Therefore, you're not eligible for a permit card. <br>Please visit account office for more information.</p>-->
+        </div>
+    </main>
+</body>
+</html>
