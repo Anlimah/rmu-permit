@@ -1,0 +1,28 @@
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.flex-container > div {
+    margin: 10px;
+    padding: 20px;
+    font-size: 40px;
+}
+
+.flex-items {
+    flex-grow: 1;
+}
+
+.flex-items > a:hover {
+    color: #512D6D;
+    text-decoration: none;
+}
+.active-i {
+    border-bottom: 5px solid #007bff;
+}
+
+.link:hover {
+    font-weight: bolder;
+}
